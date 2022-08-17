@@ -27,7 +27,7 @@ def time_it(func):
          
          # storing time after function execution
          end = time.time()
-         print(f"{end - begin} time taken in : ", func.__name__, )
+         print(f"{end - begin} time taken in : {func.__name__}" )
  
          return r
  
