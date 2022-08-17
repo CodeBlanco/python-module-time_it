@@ -16,8 +16,6 @@ def time_it(func):
     
   """
      
-     # if function takes any arguments,
-     # can be added like this.
      def inner_def(*args, **kwargs):
          
          # storing time before function execution
