@@ -1,4 +1,5 @@
-from time_it import *
+from time_it import time_def
+#time_def=time_def.time_def
 
 @time_def
 def time_max(A):
