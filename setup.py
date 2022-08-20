@@ -8,6 +8,7 @@ setup(
     license='MIT',
     author="Code Blanco",
     author_email='email@example.com',
+    description="Package for timing python",
     packages=find_packages('src'),
     package_dir={'': 'src'},
     url='https://github.com/CodeBlanco/python-module-time_it',
