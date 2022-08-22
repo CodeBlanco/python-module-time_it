@@ -3,9 +3,9 @@
 - Python Decorator for timing functions. Its fast, and fun!
 
 ```python
-from time_it import time_it
+from time_it import time_def
 
-@time_it
+@time_def
 def time_max(A):
   return max(A)
   
