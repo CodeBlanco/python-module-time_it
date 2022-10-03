@@ -1,5 +1,7 @@
 # Time It!
 
+`pip install time-it`
+
 - Python Decorator for timing functions. Its fast, and fun!
 
 ```python
