@@ -1,23 +1,15 @@
-# Time It!
-
-`pip install time-it` to install
-
-- Python Decorator for timing functions. Its fast, and fun!
-
-```python
 from time_it import time_def
 
-@time_def
+@time_def # without logger
 def time_max(A):
   return max(A)
-  
-time_max([1,4,2,5,3,3]) # prints execution time of time_max function and returns max value
-```
 
-# With a logger
+print(time_max([1,4,2,5,3,3])) # prints execution time of time_max function and returns max value
 
-```python
-# setup logger
+
+# with logger
+import logging
+import sys
 logger = logging.getLogger("gen")
 logger.setLevel(logging.DEBUG)
 stdh = logging.StreamHandler(sys.stdout)
@@ -26,10 +18,8 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 stdh.setFormatter(formatter)
 logger.addHandler(stdh)
 
-# add decorator to function
 @time_def(log_name="gen")
 def time_with_log(A):
     return max(A)
 
 time_with_log([1,4,2,5,3,3]) 
-```
